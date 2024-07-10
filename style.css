@@ -2,15 +2,11 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
+  width: 300px;
 }
 
 div.gallery img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -21,6 +17,7 @@ div.desc {
 h1 {
   color: aquamarine;
   text-align: center;
+  text-decoration: #333;
 }
 li {
   float: left;
@@ -52,4 +49,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+p2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: red;
 }

@@ -77,3 +77,178 @@ p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: red;
 }
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.info {
+  background-color: #2196f3;
+}
+.info:hover {
+  background: #0b7dda;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+#thumbnails {
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+#thumbnails img {
+  max-width: 100px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#displayImage img {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+#button-next {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  transition: border, background-color, 0.125s ease-in-out;
+}
+
+#button-next:hover {
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#button-next:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#button-previous {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  transition: border, background-color, 0.125s ease-in-out;
+}
+
+#button-previous:hover {
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#button-previous:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 5 / 4 / 6 / 6;
+  float: right;
+  width: 30%;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: rights;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

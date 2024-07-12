@@ -2,12 +2,28 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 300px;
+  width: 100%;
 }
 
 div.gallery img {
-  width: 80%;
+  width: 100%;
   height: auto;
+}
+.container {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.container {
+  grid-gap: 10px;
+}
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+container {
+  grid-auto-rows: 100px;
+  grid-auto-flow: column;
 }
 
 div.desc {
@@ -15,9 +31,10 @@ div.desc {
   text-align: center;
 }
 h1 {
-  color: aquamarine;
+  color: rgb(236, 63, 33);
   text-align: center;
   text-decoration: #333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 li {
   float: left;
@@ -55,7 +72,7 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-p2 {
+p {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: red;

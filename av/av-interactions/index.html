@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interacting with AV tags</title>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1>Interacting with AV tags</h1>
+    <img src="https://cdn.freesound.org/displays/745/745651_12880153_wave_bw_L.png"
+    />
+    <audio src="https://jsfiddle.net/HarishBoke/s9eqL/2/#<audio id="audio_play">
+        <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+        <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
+    </audio>
+    <img src="http://bit.ly/1kX7D49" onClick="document.getElementById('audio_play').play(); return false;" />
+    <img src="http://bit.ly/1mq0tIt" onClick="document.getElementById('audio_play').pause(); return false;" />" controls></audio>
+    
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" />
+    <video src="enjoytheride.mp4"></video>
+  </body>
+</html>

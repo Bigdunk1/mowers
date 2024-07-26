@@ -6,7 +6,7 @@ div.gallery {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 .container {
@@ -31,7 +31,7 @@ div.desc {
   text-align: center;
 }
 h1 {
-  color: rgb(236, 63, 33);
+  color: rgb(20, 218, 13);
   text-align: center;
   text-decoration: #333;
   font-family: Arial, Helvetica, sans-serif;
@@ -75,7 +75,7 @@ h2 {
 p {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: red;
+  color: rgb(20, 218, 13);
 }
 .btn {
   border: none;

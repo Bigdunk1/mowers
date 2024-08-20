@@ -12,14 +12,14 @@ div.gallery img {
 .container {
   display: grid;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 .container {
   grid-gap: 10px;
 }
 .container {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 container {
   grid-auto-rows: 100px;
@@ -41,9 +41,11 @@ li {
 }
 
 a {
-  display: block;
+  display: inline-block
   padding: 8px;
   background-color: #dddddd;
+  }
+  
 }
 ul {
   background-color: #dddddd;
@@ -62,7 +64,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: rgb(14, 1, 1);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -96,7 +98,9 @@ body {
   background-color: black;
   color: white;
 }
-
+p:hover, h1:hover, a:hover {
+  background-color: yellow;
+}
 #thumbnails {
   z-index: 2;
   position: fixed;
@@ -131,9 +135,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: grey;
-}
 
 .visually-hidden {
   position: absolute;
@@ -195,7 +196,7 @@ button:hover {
 }
 .parent {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 1px;
   grid-row-gap: 0px;
@@ -241,11 +242,6 @@ div.desc {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
 
 .clearfix:after {
   content: "";
